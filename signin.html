@@ -1,0 +1,141 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="shortcut icon" href="images/favicon.png" type="image/png">
+
+  <title>EasyRang登陆</title>
+
+  <link href="css/style.default.css" rel="stylesheet">
+  <link href="css/rang.css" rel="stylesheet">
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="js/html5shiv.js"></script>
+  <script src="js/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body class="signin">
+<section>
+  
+    <div class="signinpanel">
+        
+        <div class="row">
+            
+            <div class="col-md-7">
+                
+                <div class="signin-info">
+                    <div class="logopanel">
+                        <h1><span>[</span> EasyRang <span>]</span></h1>
+                    </div><!-- logopanel -->
+                
+                    <div class="mb20"></div>
+                
+                    <h5><strong>欢迎来到EasyRang 后台管理系统</strong></h5>
+                    <ul>
+                        <li><i class="fa fa-arrow-circle-o-right mr5"></i> IT场景管理</li>
+                        <li><i class="fa fa-arrow-circle-o-right mr5"></i> CTF</li>
+                        <li><i class="fa fa-arrow-circle-o-right mr5"></i> 靶场</li>
+                        <li><i class="fa fa-arrow-circle-o-right mr5"></i> 红蓝对抗</li>
+                        <li><i class="fa fa-arrow-circle-o-right mr5"></i> 拓扑图</li>
+                    </ul>
+                    <div class="mb20"></div>
+                  <!--  <strong>Not a member? <a href="signup.html">Sign Up</a></strong> -->
+                </div><!-- signin0-info -->
+            
+            </div><!-- col-sm-7 -->
+            
+            <div class="col-md-5">
+                
+                <div class="from" >
+                    <h4 class="nomargin">登陆</h4>
+                    <p class="mt5 mb20">登陆您的账户</p>
+                
+                    <input id="name" type="text" class="form-control uname" placeholder="账户" />
+                    <input id="pass" type="password" class="form-control pword" placeholder="密码" />
+                    <a href=""><small>忘记密码了？</small></a>
+                    <button id="register" class="btn btn-success btn-block">登陆</button>
+                    
+                </div>
+            </div><!-- col-sm-5 -->
+            
+        </div><!-- row -->
+        
+        <div class="signup-footer">
+            <div class="pull-left">
+                &copy;上海豌豆信息技术有限公司
+            </div>
+            <div class="pull-right">
+               Created By: <a href="http://www.easyedu2.com/" target="_blank">技术支持</a>
+            </div>
+        </div>
+        
+    </div><!-- signin -->
+  
+</section>
+
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/jquery-migrate-1.2.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/modernizr.min.js"></script>
+<script src="js/jquery.sparkline.min.js"></script>
+<script src="js/jquery.cookies.js"></script>
+
+<script src="js/toggles.min.js"></script>
+<script src="js/retina.min.js"></script>
+
+<script src="js/custom.js"></script>
+
+
+<script src="js/layer/layer.js"></script>
+<script>
+  jQuery(document).ready(function(){
+        
+        var c = jQuery.cookie('change-skin');
+        if (c && c == 'greyjoy') {
+            jQuery('.btn-success').addClass('btn-orange').removeClass('btn-success');
+        } else if(c && c == 'dodgerblue') {
+            jQuery('.btn-success').addClass('btn-primary').removeClass('btn-success');
+        } else if (c && c == 'katniss') {
+            jQuery('.btn-success').addClass('btn-primary').removeClass('btn-success');
+        }
+        
+        /*单击登录*/
+        $("#register").click(login);
+        $("body").keydown(function(){
+            if(event.keyCode =='13'){
+              login();
+            }
+        });
+
+        /*登陆*/
+        function login() {
+            var login_username = document.getElementById("name").value;
+            var login_password = document.getElementById("pass").value;
+            if (login_username == "") {
+                layer.msg("账号不能为空");
+            } else if (login_password == "") {
+                layer.msg("密码不能为空");
+            } else {
+                window.location.href="index.html";
+               /* $.post("index/login.do", {
+                    "loginName" : login_username,
+                    "password" : login_password
+                }, function(data) {
+                    if (data.status == 1) {
+                        window.location.href="manager.html";
+//                      $('#myModal8').show();
+                    } else {
+                        layer.msg(data.msg);
+                    }
+                });*/
+            }
+        }
+    });
+
+</script>
+
+</body>
+</html>

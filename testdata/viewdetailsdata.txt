@@ -1,0 +1,105 @@
+{
+    "data": [
+        {   "id":"test1",
+            "teamname": "无敌队",
+            "score": "100",
+            "players": "张三 赵四 王五 二麻子 二狗子 王麻子 狗剩",
+            "scoreDetails": "详情",
+            "playersDetails": "详情"
+        },
+        {   
+            "id":"test2",
+            "teamname": "天神队",
+            "score": "300",
+            "players": "张三 赵四 王五 二麻子 二狗子 张三 赵四 王五 二麻子 二狗子",
+            "scoreDetails": "详情",
+            "playersDetails": "详情"
+        },
+        {
+            "id":"test3",
+            "teamname": "主机队",
+            "score": "500",
+            "players": "张三 赵四 王五 二麻子 二狗子",
+            "scoreDetails": "详情",
+            "playersDetails": "详情"
+        },{
+            "id":"test4",
+            "teamname": "显示器队",
+            "score": "800",
+            "players": "张三 赵四 王五 二麻子 二狗子 王五 二麻子 二狗子",
+            "scoreDetails": "详情",
+            "playersDetails": "详情"
+        },{
+            "id":"test5",
+            "teamname": "机箱队",
+            "score": "1000",
+            "players": "张三 赵四 王五 二麻子 二狗子",
+            "scoreDetails": "详情",
+            "playersDetails": "详情"
+        },{
+            "id":"test6",
+            "teamname": "笔记本队",
+            "score": "1500",
+            "players": "张三 赵四 王五 二麻子 二狗子",
+            "scoreDetails": "详情",
+            "playersDetails": "详情"
+        },{
+            "id":"test7",
+            "teamname": "主机1",
+            "score": "2500",
+            "players": "张三 赵四 王五 二麻子 二狗子",
+            "scoreDetails": "详情",
+            "playersDetails": "详情"
+        },{
+            "id":"test8",
+            "teamname": "主机1",
+            "score": "3500",
+            "players": "张三 赵四 王五 二麻子 二狗子",
+            "scoreDetails": "详情",
+            "playersDetails": "详情"
+        },{
+            "id":"test9",
+            "teamname": "主机1",
+            "score": "4500",
+            "players": "张三 赵四 王五 二麻子 二狗子",
+            "scoreDetails": "详情",
+            "playersDetails": "详情"
+        },{
+            "id":"test10",
+            "teamname": "主机1",
+            "score": "1500",
+            "players": "张三 赵四 王五 二麻子 二狗子",
+            "scoreDetails": "详情",
+            "playersDetails": "详情"
+        },{
+            "id":"test11",
+            "teamname": "主机1",
+            "score": "2500",
+            "players": "张三 赵四 王五 二麻子 二狗子",
+            "scoreDetails": "详情",
+            "playersDetails": "详情"
+        },{
+            "id":"test12",
+            "teamname": "主机1",
+            "score": "3500",
+            "players": "张三 赵四 王五 二麻子 二狗子",
+            "scoreDetails": "详情",
+            "playersDetails": "详情"
+        },{
+            "id":"test13",
+            "teamname": "主机1",
+            "score": "500",
+            "players": "张三 赵四 王五 二麻子 二狗子",
+            "scoreDetails": "详情",
+            "playersDetails": "详情"
+        },{
+            "id":"test14",
+            "teamname": "主机1",
+            "score": "500",
+            "players": "张三 赵四 王五 二麻子 二狗子",
+            "scoreDetails": "详情",
+            "playersDetails": "详情"
+        }
+    
+    ]
+}
