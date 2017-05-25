@@ -55,30 +55,30 @@
         </li>
         <li class="nav-parent"><a href=""><i class="fa fa-gamepad"></i><span> 赛事管理</span></a>
            <ul class="children">
-                <li><a href="bug-tracker.html"><i class="fa fa-caret-right"></i> 用户管理</a></li>
-                <li><a href="bug-issues.html"><i class="fa fa-caret-right"></i> 队伍管理</a></li>
-                <li><a href="view-issue.html"><i class="fa fa-caret-right"></i> 上传文件管理</a></li>
-                <li><a href="view-issue.html"><i class="fa fa-caret-right"></i> 题目管理</a></li>
+                <li><a id="userManagement" href="#"><i class="fa fa-caret-right"></i> 用户管理</a></li>
+                <li><a id="teamManagement"  href="#"><i class="fa fa-caret-right"></i> 队伍管理</a></li>
+                <li><a id="scriptManagement" href="#"><i class="fa fa-caret-right"></i> 脚本管理</a></li>
+                <li><a id="subjectManagement" href="#"><i class="fa fa-caret-right"></i> 题目管理</a></li>
             </ul>
         </li>
         <li class="nav-parent"><a href=""><i class="fa fa-windows"></i> <span>系统管理</span></a>
             <ul class="children">
-                <li><a href="bug-tracker.html"><i class="fa fa-caret-right"></i> 节点管理</a></li>
+                <li><a id="nodeManagement" href="#"><i class="fa fa-caret-right"></i> 节点管理</a></li>
             </ul>
         </li>
         <li class="nav-parent"><a href=""><i class="fa fa-question-circle"></i><span> CTF</span></a>
             <ul class="children">
-                <li><a href="bug-tracker.html"><i class="fa fa-caret-right"></i> CTF</a></li>
+                <li><a id="CTFManagement" href="#"><i class="fa fa-caret-right"></i> CTF</a></li>
             </ul>
         </li>
         <li class="nav-parent"><a href=""><i class="glyphicon glyphicon-flag"></i> <span>靶场</span></a>
           <ul class="children">
-            <li><a href="calendar.html"><i class="fa fa-caret-right"></i> 靶场</a></li>
+            <li><a id="rangManagement" href="#"><i class="fa fa-caret-right"></i> 靶场</a></li>
           </ul>
         </li>
         <li class="nav-parent"><a href=""><i class="glyphicon glyphicon-transfer"></i> <span>红蓝对抗</span></a>
             <ul class="children">
-                <li><a href="layouts.html"><i class="fa fa-caret-right"></i> 红蓝对抗</a></li>
+                <li><a id="againstManagement" href="#"><i class="fa fa-caret-right"></i> 红蓝对抗</a></li>
             </ul>
         </li>
       </ul>
@@ -119,6 +119,7 @@
 
 
 <script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/jquery.nicescroll.min.js"></script>
 <script src="js/jquery-migrate-1.2.1.min.js"></script>
 <script src="js/jquery-ui-1.10.3.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
@@ -132,9 +133,14 @@
 
 <script src="js/custom.js"></script>
 <script src="js/layer/layer.js"></script>
+<script src="js/select2.min.js"></script>
+
+
+
 
 <!-- 页面入口 -->
 <script src="js/index.js"></script>
+
 
 
 </body>

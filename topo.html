@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/png">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>拓扑图</title>
+
+    <!-- Bootstrap -->
+    <link href="css/style.default.css" rel="stylesheet">
+    <link href="css/jquery.datatables.css" rel="stylesheet">
+
+    <link href="css/rang.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="preloader">
+        <div id="status"><i class="fa fa-spinner fa-spin"></i></div>
+    </div>
+
+    <section>
+
+        <div class="leftpanel">
+
+            <div class="logopanel" >
+                <h1><span>[</span> 拓扑图 <span>]</span></h1>
+            </div>
+            <!-- logopanel -->
+
+            <div class="leftpanelinner">
+                <ul class="nav nav-pills nav-stacked nav-bracket">
+                    <li class="nav-parent"><a href=""><i class="fa fa-soundcloud"></i> <span>云主机资产</span></a>
+                        <ul class="children ul-maxHight">
+                            <li id="centeos"><a  value="images/topo/could.gif" href="#"><i class="fa fa-caret-right"></i> centeos</a></li>
+                            <li id="ubuntu" ><a  value="images/topo/could.gif" href="#"><i class="fa fa-caret-right"></i> ubuntu</a></li>
+                            <li id="windows"><a  value="images/topo/could.gif" href="#"><i class="fa fa-caret-right"></i> windows XP操作系统</a></li>
+                            <li id="phone-1"><a  value="images/topo/phone.gif" href="#"><i class="fa fa-caret-right"></i> android</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-parent"><a href=""><i class="fa fa-sitemap"></i> <span>网络设备</span></a>
+                        <ul class="children ul-maxHight">
+                            <li id="switches"><a  value="images/topo/switches.gif" href="#"><i class="fa fa-caret-right"></i> 交换机</a></li>
+                            <li id="router" ><a value="images/topo/router.gif" href="#"><i class="fa fa-caret-right"></i> 路由器</a></li>
+                            <li id="could"><a   value="images/topo/iCloud.png" href="#"><i class="fa fa-caret-right"></i> 互联网</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-parent"><a href=""><i class="fa fa-gamepad"></i><span> 第三方资产</span></a>
+                        <ul class="children ul-maxHight">
+                            <li id="phone"><a  value="images/topo/phone.gif" href="#"><i class="fa fa-caret-right"></i> android</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- leftpanelinner -->
+        </div>
+        <!-- leftpanel -->
+
+        <div class="mainpanel">
+            <div class="headerbar">
+                <a class="menutoggle"><i class="fa fa-bars"></i></a>
+            </div>
+            <div id="content" class="content-topo">
+                <!--<div class="elebox">
+                     <img src="images/loaders/loader6.gif" alt="云主机">
+                     <p id="test">云主机</p>
+                </div>-->
+
+            </div>
+        </div>
+
+    </section>
+
+
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/jquery.nicescroll.min.js"></script>
+    <script src="js/jquery-ui-1.10.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jsplumb.min.js"></script>
+    <script src="js/jquery.cookies.js"></script>
+    <script src="js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/toggles.min.js"></script>
+    <script src="js/jquery.sparkline.min.js"></script>
+    <!--<script src="js/jquery.mousewheel.js"></script> 放大缩小
+    <script src="js/jquery.panzoom.min.js"></script>-->
+
+    <script src="js/custom.js"></script>
+    <script src="js/layer/layer.js"></script>
+
+    <script src='js/easyrang/topo.js' type="text/javascript"></script>
+</body>
+
+</html>

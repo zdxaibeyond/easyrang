@@ -74,7 +74,7 @@ $(function(){
 	        "targets": 7
 	    },{
 	        "render": function(data, type, row, meta) {
-	            return '<a href="#" id='+row.id+'>重命名</a> '+' <a href="#" id='+row.id+'>销毁</a>';
+	            return '<a href="#" id='+row.id+'>重命名</a> '+' <a href="#" id='+row.id+' class="text-danger" >销毁</a>';
 	        },
 	        "targets": 8
 	    }]

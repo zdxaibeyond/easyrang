@@ -54,7 +54,7 @@ $(function(){
 	    },
 	    {
 	        "render": function(data, type, row, meta) {
-	            return '<a href="#" id='+row.id+'>更新</a> '+' <a href="#" id='+row.id+'>删除</a>';
+	            return '<a href="#" id='+row.id+'>更新</a> '+' <a href="#" id='+row.id+' class="text-danger" >删除</a>';
 	        },
 	        "targets": 4
 	    }]

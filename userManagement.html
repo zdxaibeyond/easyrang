@@ -1,0 +1,222 @@
+<!--用户管理-->
+<link href="css/fileinput.min.css" rel="stylesheet">
+<div id="theThirdPartyAssets" class="row">
+    <div class="col-md-8" style="z-index:99">
+		<a id="NewUser"  class="btn btn-info"><font><font>新建用户</font></font></a>
+        <a id="UploadUser"  class="btn btn-success"><font><font>上传用户</font></font></a>
+	</div>
+	<div class="col-md-12 viewdetails-table table-responsive" style="margin-top:-45px;">
+			<table id="user-example" class="table table-striped table-bordered"> 
+			    <thead> 
+			     <tr>	  
+			      <th>姓名</th> 
+			      <th>编号</th>
+			      <th>角色</th>
+			      <th>登录名</th>
+			      <th>E-mail</th>
+                  <th>电话</th>
+                  <th>操作</th>
+			     </tr> 
+			    </thead> 
+			    <tbody>
+			    </tbody> 
+			    <!-- tbody是必须的 --> 
+		   </table> 
+	</div>
+</div>
+<!--弹出层-->
+<!--新建用户-->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+					&times;
+				</button>
+				<h4 class="modal-title" id="myModalLabel">
+					新建用户
+				</h4>
+			</div>
+			<div class="modal-body form-horizontal">
+				<div class="form-group">
+					<label for="inputEmail3" class="col-sm-3 control-label">登陆名称:</label>
+					<div class="col-sm-9">
+				     	<input type="text" class="form-control" id="inputEmail3" placeholder="请输入登陆名称(必填)">
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="inputPassword3" class="col-sm-3 control-label">登陆密码:</label>
+					<div class="col-sm-9">
+					<input type="text" class="form-control" id="inputPassword3" placeholder="请输入登陆密码(必填)">
+					</div>
+				</div>
+                <div class="form-group">
+                    <label for="inputPassword4" class="col-sm-3 control-label">电子邮件:</label>
+                    <div class="col-sm-9">
+                        <input type="text" class="form-control" id="inputPassword4" placeholder="请输入电子邮件">
+                    </div>
+                </div>
+                 <div class="form-group">
+                    <label for="inputPassword5" class="col-sm-3 control-label">联系电话:</label>
+                    <div class="col-sm-9">
+                        <input type="text" class="form-control" id="inputPassword5" placeholder="请输入联系电话">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputPassword6" class="col-sm-3 control-label">用户姓名:</label>
+                    <div class="col-sm-9">
+                        <input type="text" class="form-control" id="inputPassword6" placeholder="请输入用户姓名(必填)">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputPassword7" class="col-sm-3 control-label">用户编号:</label>
+                    <div class="col-sm-9">
+                        <input type="text" class="form-control" id="inputPassword7" placeholder="请输入用户编号(必填)">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputPassword8" class="col-sm-3 control-label">备注信息:</label>
+                    <div class="col-sm-9">
+                        <input type="text" class="form-control" id="inputPassword8" placeholder="请输入备注信息(100个字符以内)">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputPassword9" class="col-sm-3 control-label">选择角色:</label>
+                    <div class="col-sm-9">
+                        <select class="form-control mb15" name="role">
+						</select>
+                    </div>
+                </div>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">关闭
+				</button>
+				<button type="button" class="btn btn-primary" id="NewUserSave">
+					保存
+				</button>
+			</div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal -->
+</div>
+
+<!--上传用户-->
+<div class="modal fade" id="upload-user" tabindex="-1" role="dialog" aria-labelledby="myModalLabe2" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+					&times;
+				</button>
+				<h4 class="modal-title" id="myModalLabe2">
+					上传用户
+				</h4>
+			</div>
+			<div class="modal-body form-horizontal">
+				 <p>上传的文件按照图片上的格式.*(必须是xls或者xlsx.)</p>
+			     <img src="images/file.PNG" class="img-responsive" alt="Responsive image">
+				  <br>
+                <div class="form-group">
+                    <div class="col-sm-12">
+                       <input id="file-es" name="file-es[]" type="file" multiple>
+                    </div>
+                </div>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">关闭
+				</button>
+				<!--<button type="button" class="btn btn-primary" id="upUserSave">
+					保存
+				</button>-->
+			</div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal -->
+</div>
+
+<!--更新/详情-->
+<div class="modal fade" id="updatedDetails" tabindex="-1" role="dialog" aria-labelledby="myModalLabe3" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+					&times;
+				</button>
+				<h4 class="modal-title" id="myModalLabe3">
+					更新/详情
+				</h4>
+			</div>
+			<div class="modal-body form-horizontal">
+				<div class="form-group">
+					<label for="updatedDetails1" class="col-sm-3 control-label">用户ID:</label>
+					<div class="col-sm-9">
+				     	<input type="text" class="form-control" id="updatedDetails1" disabled >
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="updatedDetails2" class="col-sm-3 control-label">登陆名称:</label>
+					<div class="col-sm-9">
+					<input type="text" class="form-control" id="updatedDetails2" placeholder="请输入登陆名称(必填)">
+					</div>
+				</div>
+                <div class="form-group">
+                    <label for="updatedDetails3" class="col-sm-3 control-label">登陆密码:</label>
+                    <div class="col-sm-9">
+                        <input type="text" class="form-control" id="updatedDetails3" placeholder="请输入登陆密码">
+                    </div>
+                </div>
+                 <div class="form-group">
+                    <label for="updatedDetails4" class="col-sm-3 control-label">用户编号:</label>
+                    <div class="col-sm-9">
+                        <input type="text" class="form-control" id="updatedDetails4" placeholder="请输入用户编号">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="updatedDetails5" class="col-sm-3 control-label">备注信息:</label>
+                    <div class="col-sm-9">
+                        <input type="text" class="form-control" id="updatedDetails5" placeholder="请输入备注信息">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="updatedDetails6" class="col-sm-3 control-label">创建人:</label>
+                    <div class="col-sm-9">
+                        <input type="text" class="form-control" id="updatedDetails6" disabled >
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="updatedDetails7" class="col-sm-3 control-label">创建时间:</label>
+                    <div class="col-sm-9">
+                        <input type="text" class="form-control" id="updatedDetails7" disabled >
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="updatedDetails8" class="col-sm-3 control-label">最后修改人:</label>
+                    <div class="col-sm-9">
+                        <input type="text" class="form-control" id="updatedDetails8" disabled >
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="updatedDetails9" class="col-sm-3 control-label">最后修改时间:</label>
+                    <div class="col-sm-9">
+                        <input type="text" class="form-control" id="updatedDetails9" disabled >
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputPassword9" class="col-sm-3 control-label">所属角色:</label>
+                    <div class="col-sm-9">
+                        <select class="form-control mb15" name="userrole">
+						</select>
+                    </div>
+                </div>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">关闭
+				</button>
+				<button type="button" class="btn btn-primary" id="userModify">
+					保存
+				</button>
+			</div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal -->
+</div>
+<script src='js/fileinput.min.js' type="text/javascript"></script>
+<script src='js/zh.js' type="text/javascript"></script>
+<script src='js/easyrang/userManagement.js' type="text/javascript"></script>

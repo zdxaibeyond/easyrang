@@ -1,39 +1,60 @@
 {
 	"data":[
-       {
+       { 
          "ranking":"1",
          "score":"2000",
-         "teamname":"张三"
+         "teamname":"超级队伍",
+         "permissions":"权限最大",
+         "teamMembers":"张三 赵四 王五 卡蜜尔 艾翁 克烈 塔莉垭 索尔 烬 俄洛伊 千珏 塔姆 艾克 巴德",
+         "teamId":"team-1"
        },
         {
          "ranking":"2",
          "score":"1800",
-         "teamname":"张四"
+         "teamname":"无敌队伍",
+         "permissions":"权限最大",
+         "teamMembers":"张三 赵四 王五 雷克赛 卡莉丝塔 阿兹尔 纳尔 布隆 维克兹",
+         "teamId":"team-2"
        },
         {
          "ranking":"3",
          "score":"1500",
-         "teamname":"你是谁"
+         "teamname":"天神队",
+         "permissions":"权限最大",
+         "teamMembers":"张三 赵四 王五 雷克赛 卡莉丝塔 阿兹尔 纳尔 布隆 维克兹 雷克赛 卡莉丝塔 阿兹尔 纳尔 布隆 维克兹",
+         "teamId":"team-3"
        },
         {
          "ranking":"4",
          "score":"1200",
-         "teamname":"答辩"
+         "teamname":"大神队",
+         "permissions":"权限最大",
+         "teamMembers":"张三 赵四 王五 雷克赛 卡莉丝塔 阿兹尔 纳尔 布隆 维克兹",
+         "teamId":"team-4"
        },
         {
          "ranking":"5",
          "score":"1100",
-         "teamname":"巫山"
+         "teamname":"BBC队",
+         "permissions":"权限最大",
+         "teamMembers":"张三 赵四 王五 雷克赛 卡莉丝塔 阿兹尔 纳尔 布隆 维克兹",
+         "teamId":"team-5"
        },
         {
          "ranking":"6",
          "score":"900",
-         "teamname":"马武"
+         "teamname":"ADV队伍",
+         "permissions":"权限最大",
+         "teamMembers":"张三 赵四 王五 雷克赛 卡莉丝塔 阿兹尔 纳尔 布隆 维克兹 雷克赛 卡莉丝塔 阿兹尔 纳尔 布隆 维克兹",
+         "teamId":"team-6"
        },
         {
          "ranking":"7",
          "score":"500",
-         "teamname":"王二"
+         "teamname":"三儿队",
+         "permissions":"权限最大",
+         "teamMembers":"张三 赵四 王五 雷克赛 卡莉丝塔 阿兹尔 纳尔 布隆 维克兹 雷克赛 卡莉丝塔 阿兹尔 纳尔 布隆 维克兹 雷克赛 卡莉丝塔 阿兹尔 纳尔 布隆 维克兹",
+         "teamId":"team-7"
        }
 	]
 }

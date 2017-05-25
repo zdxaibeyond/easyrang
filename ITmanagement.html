@@ -33,51 +33,44 @@
 					&times;
 				</button>
 				<h4 class="modal-title" id="myModalLabel">
-					新建云主机
+					新建场景
 				</h4>
 			</div>
 			<div class="modal-body form-horizontal">
 				<div class="form-group">
-					<label for="inputEmail3" class="col-sm-3 control-label">所属节点:</label>
+					<label for="inputEmail3" class="col-sm-3 control-label">场景选择:</label>
 					<div class="col-sm-9">
 						<select class="form-control mb15" name="Node">
+							<option value="CTF">CTF场景</option>
+							<option value="rang">靶场场景</option>
+							<option value="against">红蓝对抗场景</option>
 						</select>
 					</div>
 				</div>
 				<div class="form-group">
-					<label for="inputPassword3" class="col-sm-3 control-label">主机名称:</label>
+					<label for="inputPassword3" class="col-sm-3 control-label">场景名称:</label>
 					<div class="col-sm-9">
-					<input type="text" class="form-control" id="inputPassword3" placeholder="主机名称">
+				    	<input type="text" class="form-control" id="inputPassword3" placeholder="填写场景名称">
 					</div>
 				</div>
-					<div class="form-group">
-					<label for="inputPassword4" class="col-sm-3 control-label">选择操作系统:</label>
+				<div id="teamNumbers" class="form-group">
+					<label for="inputPassword31" class="col-sm-3 control-label">队伍数量:</label>
 					<div class="col-sm-9">
-					   <select class="form-control mb15" name="os">
-						
-						</select>
+				    	<input type="number" class="form-control" id="inputPassword31" placeholder="红蓝对抗队伍数量(最少为两个队伍最多八个队伍！)">
 					</div>
 				</div>
-					<div class="form-group">
-					<label for="inputPassword5" class="col-sm-3 control-label">选择内存:</label>
+				<div class="form-group">
+					<label for="inputPassword4" class="col-sm-3 control-label">场景描述:</label>
 					<div class="col-sm-9">
-						<select class="form-control mb15" name="ram">
-						
-						</select>
-					</div>
-				</div>
-					<div class="form-group">
-					<label for="inputPassword6" class="col-sm-3 control-label">主机资产备注:</label>
-					<div class="col-sm-9">
-					<input type="text" class="form-control" id="inputPassword6" placeholder="主机资产备注">
+					<input type="text" class="form-control" id="inputPassword4" placeholder="填写场景描述">
 					</div>
 				</div>
 			</div>
 			<div class="modal-footer">
 				<button type="button" class="btn btn-default" data-dismiss="modal">关闭
 				</button>
-				<button type="button" class="btn btn-primary" id="osSave">
-					提交更改
+				<button type="button" class="btn btn-primary" id="osScenario">
+					保存
 				</button>
 			</div>
 		</div><!-- /.modal-content -->

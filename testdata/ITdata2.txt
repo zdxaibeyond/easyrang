@@ -2,209 +2,175 @@
 	"data":[
        { 
          "id":"1",
-         "name":"vm-1",
+         "name":"honglan-1",
          "node":"node0",
          "run":"在线",
          "mirrorName":"windows7",
          "vnc":"vnc1",
-         "describe":"CTF测试场景描述",
+         "describe":"红蓝对抗测试场景描述",
          "CloudHosting":"云主机1 云主机1 云主机1 云主机1 云主机1 云主机1 云主机1 云主机1 云主机2云主机2云主机2云主机2云主机2",
-         "snapshotTime":"2017/3/6/3:10:21",
-         "ip":"192.168.1.1",
-         "port":"8080"
+         "snapshotTime":"2017/3/6/3:10:21"
        }, { 
          "id":"2",
-         "name":"vm-2",
+         "name":"honglan-2",
          "node":"node1",
          "run":"在线",
          "mirrorName":"windows8",
          "vnc":"vnc1",
-         "describe":"CTF测试场景描述",
+         "describe":"红蓝对抗测试场景描述",
          "CloudHosting":"云主机1 云主机1 云主机1 云主机1 云主机1 云主机1 云主机1 云主机1",
-         "snapshotTime":"2017/3/6/4:10:21",
-         "ip":"192.168.1.1",
-         "port":"8080"
+         "snapshotTime":"2017/3/6/4:10:21"
        },
         { 
          "id":"3",
-         "name":"vm-2",
+         "name":"honglan-2",
          "node":"node3",
          "run":"离线",
          "mirrorName":"windows10",
          "vnc":"vnc1",
-         "describe":"CTF测试场景描述",
+         "describe":"红蓝对抗测试场景描述",
          "CloudHosting":"云主机1 云主机1 云主机1 云主机1 云主机1 云主机1 云主机1 云主机1",
-         "snapshotTime":"2017/2/6/3:10:21",
-         "ip":"192.168.1.1",
-         "port":"8080"
+         "snapshotTime":"2017/2/6/3:10:21"
        }, { 
          "id":"4",
-         "name":"vm-4",
+         "name":"honglan-4",
          "node":"node0",
          "run":"在线",
          "mirrorName":"windows7",
          "vnc":"vnc1",
-         "describe":"CTF测试场景描述",
+         "describe":"红蓝对抗测试场景描述",
          "CloudHosting":"云主机1 云主机1 云主机1 云主机1 云主机1 云主机1 云主机1 云主机1",
-         "snapshotTime":"2017/3/6/1:10:21",
-         "ip":"192.168.1.1",
-         "port":"8080"
+         "snapshotTime":"2017/3/6/1:10:21"
        }, { 
          "id":"5",
-         "name":"vm-4",
+         "name":"honglan-4",
          "node":"node0",
          "run":"在线",
          "mirrorName":"windows7",
          "vnc":"vnc1",
-         "describe":"CTF测试场景描述",
+         "describe":"红蓝对抗测试场景描述",
          "CloudHosting":"云主机1 云主机1 云主机1 云主机1 云主机1 云主机1 云主机1 云主机1",
-         "snapshotTime":"2017/3/6/1:10:21",
-         "ip":"192.168.1.1",
-         "port":"8080"
+         "snapshotTime":"2017/3/6/1:10:21"
        }, { 
          "id":"6",
-         "name":"vm-4",
+         "name":"honglan-4",
          "node":"node0",
          "run":"在线",
          "mirrorName":"windows7",
          "vnc":"vnc1",
-         "describe":"CTF测试场景描述",
+         "describe":"红蓝对抗测试场景描述",
          "CloudHosting":"云主机1 云主机1 云主机1 云主机1 云主机1 云主机1 云主机1 云主机1",
-         "snapshotTime":"2017/3/6/1:10:21",
-         "ip":"192.168.1.1",
-         "port":"8080"
+         "snapshotTime":"2017/3/6/1:10:21"
        }, { 
          "id":"7",
-         "name":"vm-4",
+         "name":"honglan-4",
          "node":"node0",
          "run":"在线",
          "mirrorName":"windows7",
          "vnc":"vnc1",
-         "describe":"CTF测试场景描述",
+         "describe":"红蓝对抗测试场景描述",
          "CloudHosting":"云主机1 云主机1 云主机1 云主机1 云主机1 云主机1 云主机1 云主机1",
-         "snapshotTime":"2017/3/6/1:10:21",
-         "ip":"192.168.1.1",
-         "port":"8080"
+         "snapshotTime":"2017/3/6/1:10:21"
        }, { 
          "id":"8",
-         "name":"vm-4",
+         "name":"honglan-4",
          "node":"node0",
          "run":"在线",
          "mirrorName":"windows7",
          "vnc":"vnc1",
-         "describe":"CTF测试场景描述",
+         "describe":"红蓝对抗测试场景描述",
          "CloudHosting":"云主机1 云主机1 云主机1 云主机1 云主机1 云主机1 云主机1 云主机1",
-         "snapshotTime":"2017/3/6/1:10:21",
-         "ip":"192.168.1.1",
-         "port":"8080"
+         "snapshotTime":"2017/3/6/1:10:21"
        }, { 
          "id":"9",
-         "name":"vm-4",
+         "name":"honglan-4",
          "node":"node0",
          "run":"在线",
          "mirrorName":"windows7",
          "vnc":"vnc1",
-         "describe":"CTF测试场景描述",
+         "describe":"红蓝对抗测试场景描述",
          "CloudHosting":"云主机1 云主机1 云主机1 云主机1 云主机1 云主机1 云主机1 云主机1",
-         "snapshotTime":"2017/3/6/1:10:21",
-         "ip":"192.168.1.1",
-         "port":"8080"
+         "snapshotTime":"2017/3/6/1:10:21"
        }, { 
          "id":"10",
-         "name":"vm-4",
+         "name":"honglan-4",
          "node":"node0",
          "run":"在线",
          "mirrorName":"windows7",
          "vnc":"vnc1",
-         "describe":"CTF测试场景描述",
+         "describe":"红蓝对抗测试场景描述",
          "CloudHosting":"云主机1 云主机1 云主机1 云主机1 云主机1 云主机1 云主机1 云主机1",
-         "snapshotTime":"2017/3/6/1:10:21",
-         "ip":"192.168.1.1",
-         "port":"8080"
+         "snapshotTime":"2017/3/6/1:10:21"
        }, { 
          "id":"11",
-         "name":"vm-4",
+         "name":"honglan-4",
          "node":"node0",
          "run":"在线",
          "mirrorName":"windows7",
          "vnc":"vnc1",
-         "describe":"CTF测试场景描述",
+         "describe":"红蓝对抗测试场景描述",
          "CloudHosting":"云主机1 云主机1 云主机1 云主机1 云主机1 云主机1 云主机1 云主机1",
-         "snapshotTime":"2017/3/6/1:10:21",
-         "ip":"192.168.1.1",
-         "port":"8080"
+         "snapshotTime":"2017/3/6/1:10:21"
        }, { 
          "id":"12",
-         "name":"vm-4",
+         "name":"honglan-4",
          "node":"node0",
          "run":"在线",
          "mirrorName":"windows7",
          "vnc":"vnc1",
-         "describe":"CTF测试场景描述CTF测试场景描述CTF测试场景描述",
+         "describe":"红蓝对抗测试场景描述红蓝对抗测试场景描述红蓝对抗测试场景描述",
          "CloudHosting":"云主机1 云主机1 云主机1 云主机1 云主机1 云主机1 云主机1 云主机1 云主机2云主机2云主机2云主机2",
-         "snapshotTime":"2017/3/6/1:10:21",
-         "ip":"192.168.1.1",
-         "port":"8080"
+         "snapshotTime":"2017/3/6/1:10:21"
        }, { 
          "id":"13",
-         "name":"vm-4",
+         "name":"honglan-4",
          "node":"node0",
          "run":"离线",
          "mirrorName":"windows7",
          "vnc":"vnc1",
-         "describe":"CTF测试场景描述CTF测试场景描述",
+         "describe":"红蓝对抗测试场景描述红蓝对抗测试场景描述",
          "CloudHosting":"云主机1 云主机1 云主机1 云主机1 云主机1 云主机1 云主机1 云主机1 云主机2云主机2云主机2云主机2云主机2",
-         "snapshotTime":"2017/3/6/1:10:21",
-         "ip":"192.168.1.1",
-         "port":"8080"
+         "snapshotTime":"2017/3/6/1:10:21"
        }, { 
          "id":"14",
-         "name":"vm-4",
+         "name":"honglan-4",
          "node":"node0",
          "run":"离线",
          "mirrorName":"windows7",
          "vnc":"vnc1",
-         "describe":"CTF测试场景描述CTF测试场景描述CTF测试场景描述",
+         "describe":"红蓝对抗测试场景描述红蓝对抗测试场景描述红蓝对抗测试场景描述",
          "CloudHosting":"云主机1 云主机1 云主机1 云主机1 云主机1 云主机1 云主机1 云主机1",
-         "snapshotTime":"2017/3/6/1:10:21",
-         "ip":"192.168.1.1",
-         "port":"8080"
+         "snapshotTime":"2017/3/6/1:10:21"
        }, { 
          "id":"15",
-         "name":"vm-4",
+         "name":"honglan-4",
          "node":"node0",
          "run":"离线",
          "mirrorName":"windows7",
          "vnc":"vnc1",
-         "describe":"CTF测试场景描述CTF测试场景描述CTF测试场景描述CTF测试场景描述CTF测试场景描述",
+         "describe":"红蓝对抗测试场景描述红蓝对抗测试场景描述红蓝对抗测试场景描述红蓝对抗测试场景描述红蓝对抗测试场景描述",
          "CloudHosting":"云主机1 云主机1 云主机1 云主机1 云主机1 云主机1 云主机1 云主机1 云主机2云主机2云主机2云主机2",
-         "snapshotTime":"2017/3/6/1:10:21",
-         "ip":"192.168.1.1",
-         "port":"8080"
+         "snapshotTime":"2017/3/6/1:10:21"
        }, { 
          "id":"16",
-         "name":"vm-4",
+         "name":"honglan-4",
          "node":"node0",
          "run":"离线",
          "mirrorName":"kaili",
          "vnc":"vnc1",
-         "describe":"CTF测试场景描述CTF测试场景描述",
+         "describe":"红蓝对抗测试场景描述红蓝对抗测试场景描述",
          "CloudHosting":"云主机1 云主机1 云主机1 云主机1 云主机1 云主机1 云主机1 云主机1",
-         "snapshotTime":"2017/3/6/1:10:21",
-         "ip":"192.168.1.1",
-         "port":"8080"
+         "snapshotTime":"2017/3/6/1:10:21"
        }, { 
          "id":"17",
-         "name":"vm-4",
+         "name":"honglan-4",
          "node":"node0",
          "run":"离线",
          "mirrorName":"centos",
          "vnc":"vnc1",
-         "describe":"CTF测试场景描述CTF测试场景描述CTF测试场景描述",
+         "describe":"红蓝对抗测试场景描述红蓝对抗测试场景描述红蓝对抗测试场景描述",
          "CloudHosting":"云主机1 云主机1 云主机1 云主机1 云主机1 云主机1 云主机1 云主机1 云主机2云主机2云主机2云主机2云主机2云主机2",
-         "snapshotTime":"2017/3/6/1:10:21",
-         "ip":"192.168.1.1",
-         "port":"8080"
+         "snapshotTime":"2017/3/6/1:10:21"
        }
 	]
 }
