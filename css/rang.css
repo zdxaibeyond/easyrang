@@ -300,8 +300,51 @@ table td a{
   margin-top: 3px;
   overflow: hidden;
   font-size: 12px;
+  cursor: pointer;
 }
 .ul-maxHight{
   max-height: 500px;
   overflow: auto;
+}
+.rightkeypop{
+	padding:0 10px;
+	position:absolute;
+    background:#f8f5f4;
+	border:1px solid #cbc9c9;
+	border-radius:3px;
+	box-shadow:0 0 3px #9e9d9d;
+	display:none;
+	width:100px;
+	color:#7c7c7c;
+	font:14px "微软雅黑";
+	line-height:32px;
+}
+.rightkeypop span{
+    display:block;
+	cursor:pointer;
+}
+.rightkeypop span:hover{
+   color: #000;
+}
+.rightkeypop span.delele{
+    border-bottom:1px dotted #cbc9c9;
+}
+.rightkeypop .relation_wrap{
+    position:absolute;
+	left:90px;
+	top:0;
+	background:#f8f5f4;
+	border:1px solid #cbc9c9;
+	box-shadow:0 0 3px #9e9d9d;
+	display:none;
+}
+.gray { 
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    
+    filter: grayscale(100%);
+	
+    filter: gray;
 }

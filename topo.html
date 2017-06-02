@@ -44,7 +44,7 @@
                         <ul class="children ul-maxHight">
                             <li id="switches"><a  value="images/topo/switches.gif" href="#"><i class="fa fa-caret-right"></i> 交换机</a></li>
                             <li id="router" ><a value="images/topo/router.gif" href="#"><i class="fa fa-caret-right"></i> 路由器</a></li>
-                            <li id="could"><a   value="images/topo/iCloud.png" href="#"><i class="fa fa-caret-right"></i> 互联网</a></li>
+                            <li id="Internet"><a   value="images/topo/iCloud.png" href="#"><i class="fa fa-caret-right"></i> 互联网</a></li>
                         </ul>
                     </li>
                     <li class="nav-parent"><a href=""><i class="fa fa-gamepad"></i><span> 第三方资产</span></a>
@@ -61,19 +61,133 @@
         <div class="mainpanel">
             <div class="headerbar">
                 <a class="menutoggle"><i class="fa fa-bars"></i></a>
+                <button id="topoSave">保存</button>
             </div>
-            <div id="content" class="content-topo">
+            <div id="topocontent" class="content-topo">
                 <!--<div class="elebox">
                      <img src="images/loaders/loader6.gif" alt="云主机">
                      <p id="test">云主机</p>
                 </div>-->
-
             </div>
         </div>
 
     </section>
+    <!--弹出层-->
+    <!--修改名称-->
+    <div class="modal fade in" id="ModifyName" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="false" style="display: none;">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                        ×
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel">
+                       修改名称
+                    </h4>
+                </div>
+                <div class="modal-body form-horizontal">
+                    <div class="form-group">
+                        <label for="inputPassword3" class="col-sm-3 control-label">名称:</label>
+                        <div class="col-sm-9">
+                        <input type="text" class="form-control" id="inputPassword3" placeholder="主机名称">
+                        </div>
+                    </div>   
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭
+                    </button>
+                    <button type="button" class="btn btn-primary" id="osSave">
+                        提交更改
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
 
-
+    <!--交换机-->
+    <div class="modal fade in" id="switchesmodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="false" style="display: none;">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                        ×
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel1">
+                       修改名称
+                    </h4>
+                </div>
+                <div class="modal-body form-horizontal">
+                        <div class="form-group">
+                            <table id="switchesTable" class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>接口</th>
+                                        <th>连接</th>
+                                        <th>Vlan ID</th>
+                                        <th>IP地址</th>
+                                        <th>子网掩码</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                  
+                                </tbody>
+                                </table>
+                        </div>
+                    </div>   
+                </div>
+                <div class="modal-footer" style="background:#fff">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭
+                    </button>
+                    <button type="button" class="btn btn-primary" id="switchesSave">
+                        提交更改
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+     <!--互联网-->
+    <div class="modal fade in" id="Internetmodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="false" style="display: none;">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                        ×
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel11">
+                       互联网
+                    </h4>
+                </div>
+                <div class="modal-body form-horizontal">
+                        <div class="form-group">
+                            <table id="InternetTable" class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>接口</th>
+                                        <th>连接</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                  
+                                </tbody>
+                                </table>
+                        </div>
+                    </div>   
+                </div>
+                <div class="modal-footer" style="background:#fff">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--右键弹出菜单-->
+    <div class="rightkeypop" id="rightkeyPop">
+        <span class="delele" id="startVnc"><i class="fa  fa-play"></i> 开机</span>
+        <span class="delele" id="startRestart"><i class="fa fa-toggle-right"></i> 重启</span>
+        <span class="delele" id="startOff"><i class="fa fa-dot-circle-o"></i> 关机</span>
+        <span class="delele" id="vnc"><i class="fa fa-desktop"></i> VNC</span>
+        <span class="delele" id="delEle"><i class="fa fa-warning"></i> 删除</span>
+    </div>
     <script src="js/jquery-1.11.1.min.js"></script>
     <script src="js/jquery.nicescroll.min.js"></script>
     <script src="js/jquery-ui-1.10.3.min.js"></script>
